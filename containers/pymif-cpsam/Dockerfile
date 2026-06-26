@@ -20,7 +20,7 @@ RUN mamba env create -p /opt/conda_env -f environment.yml && \
 RUN /opt/conda_env/bin/pip install --no-cache-dir \
     torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121 \
     cellpose \
-    git+https://github.com/grinic/pymif.git@dfc383b2d0a499c56942f1c3cd336066588096c8
+    git+https://github.com/grinic/pymif.git@v2026.6.0
 
 # --- Stage 2: The Runner (Final Image) ---
 FROM debian:bookworm-slim
